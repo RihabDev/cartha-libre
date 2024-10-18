@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Jeu - CarthaLibre</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .main-content {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1a3d5d;
+            margin-bottom: 20px;
+        }
+
+        .game-description {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .features {
+            background-color: #e7f1f9;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .feature-item {
+            margin: 10px 0;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(26, 61, 93, 0.1);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 0;
+        }
+
+        .feature-item:hover::before {
+            opacity: 1;
+        }
+
+        .feature-title {
+            font-weight: bold;
+            z-index: 1;
+            position: relative;
+            color: #1a3d5d;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .characters {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+
+        .character {
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .character:hover {
+            transform: scale(1.05);
+        }
+
+        .character img {
+            width: 150px;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .character-name {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #1a3d5d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo2.webp" alt="Logo CarthaLibre" class="logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="program.html">Programme</a></li>
+                <li><a href="about.html">A propos</a></li>
+                <li><a href="jeu.html">Notre jeu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <h1>Bienvenue dans l'univers de CarthaLibre !</h1>
+        <p class="game-description">
+            Plongez dans un monde interactif fascinant où vous avez l'opportunité de construire votre propre version de CarthaLibre. Ce jeu n'est pas qu'un simple quiz; c'est une aventure épique où chaque choix que vous faites façonne l'avenir de notre monde.
+        </p>
+        <p class="game-description">
+            Avec Hannibal comme votre guide, partez à la découverte des valeurs et des idées qui sous-tendent notre mouvement. À chaque étape, répondez à des questions stimulantes et relevez des défis qui vous aideront à mieux comprendre notre vision pour la Tunisie.
+        </p>
+
+        <div class="features">
+            <h2>Fonctionnalités du Jeu</h2>
+            <div class="feature-item">
+                <div class="feature-title">🌍 Exploration Interactive</div>
+                <p>Parcourez un monde virtuel où chaque choix a un impact. Créez, explorez, et apprenez en même temps !</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-title">🧠 Quiz Engagés</div>
+                <p>Testez vos connaissances sur les valeurs de CarthaLibre tout en vous amusant. Vos réponses façonneront l'avenir !</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-title">🎭 Personnage Charismatique</div>
+                <p>Rencontrez Hannibal qui vous accompagnera dans votre aventure, avec sa propre histoire à raconter.</p>
+            </div>
+        </div>
+
+        <div class="main-character">
+            <img src="images/hannibal.jpg" alt="Hannibal" class="character-image">
+            <div>
+                <h3>Rencontrez Hannibal</h3>
+                <p>Hannibal, le héros emblématique de notre histoire, n'est pas seulement un personnage ; il est l'âme de cette aventure. Avec sa sagesse et son charisme, il vous conduira à travers des épreuves intrigantes et des énigmes stimulantes, tout en partageant les récits fascinants de notre patrimoine.</p>
+                <p>Au fil de votre parcours, vous découvrirez des éléments inexplorés de notre culture et de notre histoire, tout en contribuant à la construction d'un monde dynamique où chacun a son mot à dire. Serez-vous capable de devenir le maître de votre destin ?</p>
+            </div>
+        </div>
+
+        <p>Joignez-vous à nous pour bâtir ensemble cet univers de <strong>CarthaLibre</strong>, où la curiosité et l'engagement se rejoignent. Êtes-vous prêt à relever le défi et à faire entendre votre voix ?</p>
+
+        <a href="https://www.canva.com/design/DAGT2f_JVWE/KX9aFa2TeMpMBVy1buiwHw/view?utm_content=DAGT2f_JVWE&utm_campaign=designshare&utm_medium=link&utm_source=editor" class="cta-button2" class="cta-button2">Jouer !</a>
+    </div>
+    
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CarthaLibre - Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
